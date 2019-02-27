@@ -34,5 +34,15 @@ namespace BilUnitTest
             //Assert
             Assert.AreEqual(125, pris);
         }
+        [TestMethod]
+        public void KøretøjBilTest()
+        {
+            //Arrange
+            Bil bil = new Bil();
+            //Act
+            string køretøj = bil.Køretøj();
+            //Assert
+            Assert.AreEqual("bil", køretøj);
+        }
     }
 }
